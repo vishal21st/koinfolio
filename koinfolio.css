@@ -1,0 +1,122 @@
+.koinfolio {
+  margin-bottom: 15px;
+}
+
+.koinfolio .highlight {
+  background: yellow;
+}
+
+.highlight {
+  background: yellow;
+}
+
+.koinfolio .coin-col {
+  padding: 15px;
+  text-align: center;
+}
+.animate {
+  transition: all .3s;
+}
+
+.koinfolio .koinfolio__coin:nth-child(even) {
+  /*background: #f2f9fe;*/
+  background: #f9fcfe;
+}
+
+.koinfolio__header {
+  font-weight: 600;
+}
+
+.koin-item-bold {
+  font-weight: 600;
+}
+
+.coin-col.profit {
+  color: green;
+}
+
+.coin-col .fa {
+  margin-right: 10px;
+  display: none;
+}
+
+.coin-col.profit .fa.fa-caret-down {
+  display: none;
+}
+
+.coin-col.profit .fa.fa-caret-up {
+  display: inline-block;
+}
+
+.coin-col.loss {
+  color: red;
+}
+
+.coin-col.loss .fa.fa-caret-up {
+  display: none;
+}
+
+.coin-col.loss .fa.fa-caret-down {
+  display: inline-block;
+}
+
+.koin-image {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.koinfolio__portfolio {
+  border-top: 10px solid #f7f7f7;
+}
+
+.portfolio-item-label {
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+
+.portfolio-profit-or-loss.profit {
+  color: green;
+}
+
+.portfolio-profit-or-loss.loss {
+  color: red;
+}
+
+.portfolio-profit-or-loss .fa {
+  margin-right: 10px;
+}
+
+.portfolio-profit-or-loss.profit .fa-caret-up{
+  display: inline-block;
+}
+
+.portfolio-profit-or-loss.profit .fa-caret-down{
+  display: none;
+}
+
+.portfolio-profit-or-loss.loss .fa-caret-up{
+  display: none;
+}
+
+.portfolio-profit-or-loss.loss .fa-caret-down{
+  display: inline-block;
+}
+
+.portfolio-item {
+  padding: 15px;
+  text-align: center;
+  display: inline-block;
+}
+
+
+.portfolio-label {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.portfolio-item-value {
+  font-size: 30px;
+}

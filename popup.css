@@ -1,0 +1,136 @@
+body {
+  margin: 10px;
+  white-space: nowrap;
+}
+
+#alert-form {
+  position: relative;
+  width: 300px;
+}
+
+#alert-form.on:before{
+  display: none
+}
+
+#alert-form:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(240,240,240,.7);
+  z-index: 1;
+  width: 120%;
+  height: 112%;
+  left: -10px;
+  right: -10px;
+  top: -10px;
+  bottom: -10px;
+}
+
+.koinex-heading {
+  font-weight: 300;
+}
+
+.coin-option {
+  margin: 20px 0;
+  position: relative;
+}
+
+.coin-option input[type="text"] {
+  padding: 5px;
+  width: 50px;
+  clear: both;
+}
+
+.coin-option button {
+  background: #226eb5;
+  padding: 7px 15px;
+  border-radius: 0;
+  color: #ffffff;
+  float: right;
+  border: #ffffff;
+}
+
+.coin-label {
+  display: inline-block;
+  width: 50px;
+}
+
+.error-block {
+  color: red;
+  padding-left: 55px;
+}
+
+.toggle-switch-wrap {
+  text-align: right;
+}
+
+.toggle-switch-label {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+}
+
+
+.toggle-switch-label .state-label.on {
+  display: none;
+}
+
+
+.toggle-switch-label.on .state-label.on{
+  display: inline-block;
+}
+
+.toggle-switch-label.on .state-label.off{
+  display: none;
+}
+
+.switch-radio-input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  visibility: hidden;
+}
+
+.switch-radio-input:hover {
+  cursor: pointer;
+}
+
+.toggle-switch {
+  background: #969595;
+  border-radius: 10px;
+  height: 20px;
+  width: 40px;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.state-label {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+
+.toggle-switch .switch {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #dedee0;
+  position: relative;
+  transition: position .3s;
+  left: -20px;
+}
+
+.toggle-switch.on {
+  background: #1dd41d;
+  border: 1px solid #1dd41d;
+
+}
+
+.toggle-switch.on .switch {
+  left: 0;
+}

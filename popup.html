@@ -1,0 +1,119 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <link rel="stylesheet" href="popup.css">
+    <!-- <style type="text/css">
+      body {
+        margin: 10px;
+        white-space: nowrap;
+      }
+
+      h1 {
+        font-size: 15px;
+      }
+
+      #container {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+    </style> -->
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+    -->
+    <script src="popup.js"></script>
+  </head>
+
+  <body>
+    <div class="toggle-switch-wrap">
+      <label for="toggle-switch" class="toggle-switch-label">
+        <input type="checkbox" value="true" id="toggle-switch" class="switch-radio-input">
+        <span class="state-label off">Off</span>
+        <span class='state-label on'>On</span>
+        <div class="toggle-switch">
+          <span class="switch"></span>
+        </div>
+
+      </label>
+    </div>
+    <h1 class="koinex-heading">Set Price Alert On Koinex</h1>
+    <div id="alert-form">
+      <!-- <span>Choose a color</span>
+      <select id="dropdown">
+        <option selected disabled hidden value=''></option>
+        <option value="white">White</option>
+        <option value="pink">Pink</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+      </select> -->
+
+      <div class="coin-option">
+        <span class="coin-label">
+          BTC
+        </span>
+        <input type="text" placeholder="high" id="BTC-high">
+        <input type="text" placeholder="low" id="BTC-low">
+        <button class="btnSave" id="BTCSave" data-ticker="BTC">Alert Me</button>
+        <div class="error-block" id="BTC-error"></div>
+      </div>
+      <div class="coin-option">
+        <span class="coin-label">
+          ETH
+        </span>
+        <input type="text" placeholder="high" id="ETH-high">
+        <input type="text" placeholder="low" id="ETH-low">
+        <button class="btnSave" id="ETHSave" data-ticker="ETH">Alert Me</button>
+        <div class="error-block" id="ETH-error"></div>
+      </div>
+      <div class="coin-option">
+        <span class="coin-label">
+          XRP
+        </span>
+        <input type="text" placeholder="high" id="XRP-high">
+        <input type="text" placeholder="low" id="XRP-low">
+        <button class="btnSave" id="XRPSave" data-ticker="XRP">Alert Me</button>
+        <div class="error-block" id="XRP-error"></div>
+      </div>
+      <div class="coin-option">
+        <span class="coin-label">
+          LTC
+        </span>
+        <input type="text" placeholder="high" id="LTC-high">
+        <input type="text" placeholder="low" id="LTC-low">
+        <button class="btnSave" id="LTCSave" data-ticker="LTC">Alert Me</button>
+        <div class="error-block" id="LTC-error"></div>
+      </div>
+      <div class="coin-option">
+        <span class="coin-label">
+          BCH
+        </span>
+        <input type="text" placeholder="high" id="BCH-high">
+        <input type="text" placeholder="low" id="BCH-low">
+        <button class="btnSave" id="BCHSave" data-ticker="BCH">Alert Me</button>
+        <div class="error-block" id="BCH-error"></div>
+      </div>
+
+      <div class="coin-option">
+        <span class="coin-label">
+          GNT
+        </span>
+        <input type="text" placeholder="high" id="GNT-high">
+        <input type="text" placeholder="low" id="GNT-low">
+        <button class="btnSave" id="GNTSave" data-ticker="GNT">Alert Me</button>
+        <div class="error-block" id="GNT-error"></div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
